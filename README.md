@@ -1,4 +1,4 @@
-# Let's aggregate some .js files
+# Let's merge some .js files
 
 Tired of all these `<script>`? 
 
