@@ -1,6 +1,6 @@
 # Let's aggregate some .js files
 
-Tired of all these <script>?
+Tired of all these \<script\>?
 
 1. Drag **js_monticule.php** on your web server
 
