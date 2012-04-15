@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Js monticule.php by nikkimoreaux</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Js monticule.php</h1>
+        <p>a little php script to aggregate all your .js files</p>
+        <p class="view"><a href="https://github.com/nikkimoreaux/js_monticule.php">View the Project on GitHub <small>nikkimoreaux/js_monticule.php</small></a></p>
+        <ul>
+          <li><a href="https://github.com/nikkimoreaux/js_monticule.php/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/nikkimoreaux/js_monticule.php/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/nikkimoreaux/js_monticule.php">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1><a href="http://nikkimoreaux.github.com/js_monticule.php/">Project Page</a></h1>
+
+<h1>Let's merge some .js files</h1>
+
+<p>Tired of all these <code>&lt;script&gt;</code>? </p>
+
+<p><strong>js_monticule.php</strong> is a little php script that aggregate all your .js 
+files in one, with full automatic versioning and async optimization.</p>
+
+<h2>Setup</h2>
+
+<ol>
+<li><p>Drag <strong>js_monticule.php</strong> on your web server</p></li>
+<li>
+<p>Include and call <strong>js_monticule.php</strong> within your page <em>via</em>: </p>
+
+<pre><code>&lt;?php
+include_once("js_monticule.php");
+js_monticule("file1.js","file2.js","file3.js");
+?&gt;
+</code></pre>
+
+<p>it will automatically generate this asynchronous snippet: </p>
+
+<pre><code>&lt;script type="text/javascript"&gt;
+(function(){
+    var m = document.createElement('script');
+    m.type = 'text/javascript';
+    m.async = true;
+    m.src = 'js_monticule_cache/0850000225d05d25cb4f1b6ee428f6dd_2668932196_94890_monticule.js';
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(m);
+})();
+&lt;/script&gt;
+</code></pre>
+
+<p>you need a classic synchronous script tag? use: </p>
+
+<pre><code>&lt;?php
+include_once("js_monticule.php");
+js_monticule("file1.js","file2.js","file3.js",false);
+?&gt;
+</code></pre>
+
+<p>to generate: </p>
+
+<pre><code>&lt;script type="text/javascript" src="js_monticule_cache/0850000225d05d25cb4f1b6ee428f6dd_2668932196_94890_monticule.js"&gt;&lt;/script&gt;
+</code></pre>
+</li>
+<li><p>That's all. <strong>js_monticule.php</strong> take care of the rest.</p></li>
+</ol><h2>MIT License</h2>
+
+<p><strong>js_monticule.php</strong></p>
+
+<p>Copyright (c) 2012 Nikki Moreaux, <a href="http://diplodoc.us">http://diplodoc.us</a></p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/nikkimoreaux">nikkimoreaux</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
