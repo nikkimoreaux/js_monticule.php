@@ -40,7 +40,7 @@ to generate:
 		
 3. That's all. **js_monticule.php** take care of the rest.
 
-## MIT Licence
+## MIT License
 
 **js_monticule.php**
 
