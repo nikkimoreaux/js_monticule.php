@@ -19,11 +19,11 @@ it will automatically generate this asynchronous snippet:
 
 		<script type="text/javascript">
 		(function(){
-			var monticule = document.createElement('script');
-			monticule.type = 'text/javascript';
-			monticule.async = true;
-			monticule.src = 'js_monticule_cache/0850000225d05d25cb4f1b6ee428f6dd_2668932196_94890_monticule.js';
-			(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(monticule);
+			var m = document.createElement('script');
+			m.type = 'text/javascript';
+			m.async = true;
+			m.src = 'js_monticule_cache/0850000225d05d25cb4f1b6ee428f6dd_2668932196_94890_monticule.js';
+			(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(m);
 		})();
 		</script>
 you need a classic synchronous script tag? use: 

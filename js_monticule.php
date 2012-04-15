@@ -193,11 +193,11 @@ function js_monticule(){
 		if($async){
 			$output .= ">
 	(function(){
-		var monticule = document.createElement('script');
-		monticule.type = 'text/javascript';
-		monticule.async = true;
-		monticule.src = '" . $monticule_package_url . "';
-	(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(monticule);
+		var m = document.createElement('script');
+		m.type = 'text/javascript';
+		m.async = true;
+		m.src = '" . $monticule_package_url . "';
+	(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(m);
 	})();
 	</script>";
 		}else{
