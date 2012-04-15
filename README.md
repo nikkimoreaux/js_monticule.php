@@ -5,6 +5,8 @@ Tired of all these `<script>`?
 **js_monticule.php** is a little php script that aggregate all your .js 
 files in one, with full automatic versioning and async optimization.
 
+## Setup
+
 1. Drag **js_monticule.php** on your web server
 
 2. Include and call **js_monticule.php** within your page *via*: 
