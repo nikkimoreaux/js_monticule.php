@@ -1,4 +1,4 @@
 $(function(){
-	$("h1").text("Ça tournera.");
+	$("h1").text("It seems to work.");
 	
 });
