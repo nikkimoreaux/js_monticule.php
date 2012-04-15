@@ -1,0 +1,12 @@
+# optimal apache caching
+
+<FilesMatch "_monticule\.js$">
+	ForceType text/javascript
+	<IfModule mod_headers.c>
+		Header append Cache-Control "public"
+	</IfModule>
+	<IfModule mod_expires.c>
+		ExpiresActive On
+		ExpiresDefault "access plus 11 month"
+	</IfModule>
+</FilesMatch>
