@@ -7,7 +7,7 @@
 	<?php
 	
 	include_once("js_monticule.php");
-	js_monticule("./javascript/jquery.js","./javascript/index.js");
+	js_monticule("./demo_javascripts/jquery.js","./demo_javascripts/index.js");
 	
 	?>
 	
