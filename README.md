@@ -1,5 +1,3 @@
-# [Project Page](http://nikkimoreaux.github.com/js_monticule.php/)
-
 # Let's merge some .js files
 
 Tired of all these `<script>`? 
